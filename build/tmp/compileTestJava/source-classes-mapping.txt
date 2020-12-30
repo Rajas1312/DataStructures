@@ -1,0 +1,6 @@
+javapractice/MyNodeTest.java
+ javapractice.MyNodeTest
+javapractice/MyLinkedListTest.java
+ javapractice.MyLinkedListTest
+javapractice/MyStackTest.java
+ javapractice.MyStackTest
