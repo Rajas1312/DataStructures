@@ -19,4 +19,8 @@ public class MyQueueTest {
                 myQueue.getTail().equals(myThirdNode);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void given3numbersShouldReturnDequeue() {
+    }
 }
