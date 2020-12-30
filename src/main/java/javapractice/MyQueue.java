@@ -23,4 +23,8 @@ public class MyQueue {
     public INode getTail() {
         return this.myLinkedList.getTail();
     }
+    public INode dequeue() {
+        return myLinkedList.pop();
+    }
+
 }
