@@ -18,4 +18,17 @@ public class MyStack {
     public void printStack() {
         mylinkedList.printNodes();
     }
+
+    public INode pop() {
+        return mylinkedList.pop();
+    }
+
+    public boolean isEmpty() {
+        if(this.mylinkedList.getHead()==null){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
