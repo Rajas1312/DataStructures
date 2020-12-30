@@ -4,3 +4,5 @@ javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
 javapractice/MyStackTest.java
  javapractice.MyStackTest
+javapractice/MyQueueTest.java
+ javapractice.MyQueueTest
