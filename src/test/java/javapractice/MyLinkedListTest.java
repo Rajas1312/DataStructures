@@ -79,11 +79,8 @@ public class MyLinkedListTest {
         myLinkedList.add(myFirstNode);
         myLinkedList.add(mySecondNode);
         myLinkedList.add(myThirdNode);
-        myLinkedList.popLast();
+        myLinkedList.search(30);
         myLinkedList.printNodes();
-        boolean result=
-                        myLinkedList.getTail().equals(mySecondNode);
 
-        Assert.assertTrue(result);
     }
 }

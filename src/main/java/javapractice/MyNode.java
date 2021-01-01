@@ -25,4 +25,12 @@ public class MyNode<K> implements INode<K> {
         this.next=next;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder myNodeString=new StringBuilder();
+        myNodeString.append("MyNode{ "+ "key= ").append(key).append("}");
+        if(getNext()!=null)
+            myNodeString.append("->").append(getNext());
+        return myNodeString.toString();
+    }
 }

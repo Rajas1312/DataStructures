@@ -1,6 +1,6 @@
 package javapractice;
 
-public class MyLinkedList  {
+public class MyLinkedList<K>  {
     private INode head;
     private INode tail;
     public MyLinkedList() {
@@ -36,31 +36,33 @@ public class MyLinkedList  {
         newNode.setNext(tempNode);
     }
     public INode pop(){
-        INode tempNode=this.head;
+        INode tempNode=head;
         this.head=head.getNext();
         return tempNode;
     }
     public INode popLast(){
-        INode tempNode=head;
+        INode tempNode=this.head;
         while (!tempNode.getNext().equals(tail)){
             tempNode=tempNode.getNext();
         }
         this.tail=tempNode;
         tempNode=tempNode.getNext();
+        this.head=head.getNext();
         return tempNode;
     }
-    public void printNodes(){
-        StringBuffer myNodes=new StringBuffer("My Nodes: ");
+    public INode search(K key){
         INode tempNode=head;
-        while (tempNode.getNext()!=null){
-            myNodes.append(tempNode.getKey());
-            if(!tempNode.equals(tail)){
-                myNodes.append("->");
-                tempNode=tempNode.getNext();
+        while (tempNode!=null &&tempNode.getNext()!=null){
+            if(tempNode.getKey().equals(key)){
+                //System.out.println(key);
+                return tempNode;
             }
+                tempNode=tempNode.getNext();
         }
-        myNodes.append(tempNode.getKey());
-        System.out.println(myNodes);
+        return null;
+    }
+    public void printNodes(){
+        System.out.println("My nodes: " +head);
     }
 
     public INode getHead() {
@@ -77,5 +79,10 @@ public class MyLinkedList  {
 
     public void setTail(INode tail) {
         this.tail = tail;
+    }
+
+    @Override
+    public String toString() {
+        return "MyLinkedListNodes{" +head+ " }";
     }
 }
