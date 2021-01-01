@@ -1,10 +1,12 @@
 javapractice/MyNodeTest.java
  javapractice.MyNodeTest
+javapractice/MyStackTest.java
+ javapractice.MyStackTest
 javapractice/MyQueueTest.java
  javapractice.MyQueueTest
 javapractice/MyHashMapTest.java
  javapractice.MyHashMapTest
 javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
-javapractice/MyStackTest.java
- javapractice.MyStackTest
+javapractice/MyLinkedHashMapTest.java
+ javapractice.MyLinkedHashMapTest
