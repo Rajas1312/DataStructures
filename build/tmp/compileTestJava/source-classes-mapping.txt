@@ -10,3 +10,5 @@ javapractice/MyLinkedListTest.java
  javapractice.MyLinkedListTest
 javapractice/MyLinkedHashMapTest.java
  javapractice.MyLinkedHashMapTest
+javapractice/MyBinaryTreeTest.java
+ javapractice.MyBinaryTreeTest

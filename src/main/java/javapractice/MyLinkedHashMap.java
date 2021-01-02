@@ -40,6 +40,13 @@ ArrayList<MyLinkedList<K>> myBucketArray;
           myMapNode.setValue(value);
       }
     }
+//    public V remove(K key)
+//    {
+//       int index=this.getBucketIndex(key);
+//       MyLinkedList<K> myLinkedList=this.myBucketArray.get(index);
+//       MyMapNode<K,V> myMapNode=(MyMapNode<K, V>)myLinkedList.search(key);
+//       myLinkedList.
+//    }
 
     @Override
     public String toString() {
